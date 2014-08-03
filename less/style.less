@@ -270,7 +270,7 @@ a.symbol:before {
     .contentback {
         color: #000;
         background-color: #fff;
-        opacity: 0.6;
+        background-color: rgba(255,255,255,0.6);
         padding: 2.5em;
         font-weight: lighter;
         max-width: 60em;
@@ -311,7 +311,7 @@ a.symbol:before {
     .contentback {
         color: #000;
         background-color: #fff;
-        opacity: 0.75;
+        background-color: rgba(255,255,255,0.75);
         padding: 2.5em;
         font-weight: lighter;
         max-width: 60em;
@@ -334,7 +334,7 @@ a.symbol:before {
     .contentback {
         color: #000;
         background-color: #fff;
-        opacity: 0.75;
+        background-color: rgba(255,255,255,0.75);
         padding: 2.5em;
         font-weight: lighter;
         max-width: 80em;
@@ -348,9 +348,9 @@ a.symbol:before {
 }
 
 #ending {
-    background-image: url("@{images}/jonasurbano.jpg");
+    background-image: url("@{images}/jonasurbano2.jpg");
     background-color: #d7a46d;
-    background-position: bottom right;
+    background-position: center right;
     padding-top: 9em;
     padding-left: 2em;
     
@@ -381,19 +381,35 @@ a.symbol:before {
 
 a.cv {
     display: inline-block;
-    border: solid 1px @brown1;
+    border: solid 1px @blue2;
     margin-top: 1.2em;
     padding: 0 0.6em;
-    background-color: #b3dfff;
-    color: @brown1;
+    background-color: @blue1;
+    color: #fff;
     margin-right: 8em;
     .roundbordered;
 
     &:hover {
-        border: solid 1px @blue2;
-        background-color: @blue1;
-        color: #fff;
+        border: solid 1px @blue1;
+        background-color: #AED9FF;
+        color: @blue1;
     }
+}
+
+.screenshots {
+    width: 100%;    
+}
+
+#img-ducktionary {
+    .screenshots;
+}
+
+#img-ecdo {
+    .screenshots;
+}
+
+#img-java-desktop {
+    .screenshots;
 }
 
 @media all and (max-width: 85em) {

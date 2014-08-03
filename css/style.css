@@ -315,7 +315,7 @@ a.symbol:before {
 #ducktionary .contentback {
   color: #000;
   background-color: #fff;
-  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 2.5em;
   font-weight: lighter;
   max-width: 60em;
@@ -367,7 +367,7 @@ a.symbol:before {
 #java-desktop .contentback {
   color: #000;
   background-color: #fff;
-  opacity: 0.75;
+  background-color: rgba(255, 255, 255, 0.75);
   padding: 2.5em;
   font-weight: lighter;
   max-width: 60em;
@@ -397,7 +397,7 @@ a.symbol:before {
 #ecdo .contentback {
   color: #000;
   background-color: #fff;
-  opacity: 0.75;
+  background-color: rgba(255, 255, 255, 0.75);
   padding: 2.5em;
   font-weight: lighter;
   max-width: 80em;
@@ -417,9 +417,9 @@ a.symbol:before {
 /* line 350, D:\Github\jonascv\less\style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003350}}
 #ending {
-  background-image: url("../images/jonasurbano.jpg");
+  background-image: url("../images/jonasurbano2.jpg");
   background-color: #d7a46d;
-  background-position: bottom right;
+  background-position: center right;
   padding-top: 9em;
   padding-left: 2em;
 }
@@ -460,11 +460,11 @@ a.symbol:before {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003382}}
 a.cv {
   display: inline-block;
-  border: solid 1px #954a00;
+  border: solid 1px #0033ff;
   margin-top: 1.2em;
   padding: 0 0.6em;
-  background-color: #b3dfff;
-  color: #954a00;
+  background-color: #0088ff;
+  color: #fff;
   margin-right: 8em;
   -webkit-border-radius: 6px;
   -webkit-border-bottom-right-radius: 6px;
@@ -476,93 +476,113 @@ a.cv {
 /* line 392, D:\Github\jonascv\less\style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003392}}
 a.cv:hover {
-  border: solid 1px #0033ff;
-  background-color: #0088ff;
-  color: #fff;
+  border: solid 1px #0088ff;
+  background-color: #AED9FF;
+  color: #0088ff;
+}
+/* line 399, D:\Github\jonascv\less\style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003399}}
+.screenshots {
+  width: 100%;
+}
+/* line 403, D:\Github\jonascv\less\style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003403}}
+#img-ducktionary {
+  width: 100%;
+}
+/* line 407, D:\Github\jonascv\less\style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003407}}
+#img-ecdo {
+  width: 100%;
+}
+/* line 411, D:\Github\jonascv\less\style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003411}}
+#img-java-desktop {
+  width: 100%;
 }
 @media all and (max-width: 85em) {
-  /* line 400, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003400}}
+  /* line 416, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003416}}
   body {
     font-size: 9px;
   }
 }
 @media all and (max-width: 80em) {
-  /* line 404, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003404}}
+  /* line 420, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003420}}
   section.alternate {
     padding: 10em 15em;
   }
 }
 @media all and (max-width: 75em) {
-  /* line 408, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003408}}
+  /* line 424, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003424}}
   body {
     font-size: 8px;
   }
-  /* line 409, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003409}}
+  /* line 425, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003425}}
   section.init {
     height: auto;
   }
 }
 @media all and (max-width: 65em) {
-  /* line 413, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003413}}
+  /* line 429, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003429}}
   body {
     font-size: 7px;
   }
 }
 @media all and (max-width: 55em) {
-  /* line 417, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003417}}
+  /* line 433, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003433}}
   li a span {
     display: none;
   }
-  /* line 418, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003418}}
+  /* line 434, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003434}}
   section.more {
     background-image: none;
   }
 }
 @media all and (max-width: 50em) {
-  /* line 422, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003422}}
+  /* line 438, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003438}}
   section,
   section.alternate,
   section.top,
   section.last {
     padding: 6em;
   }
-  /* line 423, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003423}}
+  /* line 439, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003439}}
   section.close {
     padding-top: 0;
   }
-  /* line 424, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003424}}
+  /* line 440, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003440}}
   i {
     display: none !important;
   }
 }
 @media all and (max-width: 40em) {
-  /* line 428, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003428}}
+  /* line 444, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003444}}
   section.one {
     background-image: none;
   }
-  /* line 429, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003429}}
+  /* line 445, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003445}}
   h1 {
     font-size: 7em;
   }
-  /* line 430, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003430}}
+  /* line 446, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003446}}
   input[type=email] {
     width: 20em;
   }
-  /* line 431, D:\Github\jonascv\less\style.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003431}}
+  /* line 447, D:\Github\jonascv\less\style.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Github\/jonascv\/less\/style\.less}line{font-family:\00003447}}
   br {
     display: none;
   }
