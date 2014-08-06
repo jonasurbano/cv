@@ -25,22 +25,6 @@ h1 {
     max-width: 2em;
 }
 
-h2 {
-    font-size:3em;
-    margin:0 0 .5em 0;
-    line-height: 1.8;
-    letter-spacing:.05em;
-}
-
-h1, h2 {
-    font-family: 'Bangers', cursive;
-}
-
-h1 i, h2 i {
-    float:left;
-    margin:-2px .5em 0 -1.8em;
-}
-
 p {
     margin:0 0 1.5em 0;
     line-height: 1.8;
@@ -51,20 +35,6 @@ p {
 p.first {
     padding-top:1.5em;
     margin:0;
-}
-
-ol {
-    list-style-type:decimal;
-    margin:0;
-    font-size:2em;
-}
-
-ol.last {
-    margin-bottom:5em;
-}
-
-ol p {
-    display: none;
 }
 
 li {
@@ -114,29 +84,23 @@ a:hover {
     }
 }
 
+@base: 5%;
+@content: @base * 12;
+@half: @base * 10;
+@content-padding: 2%;                // @base / @content
+@content-padding-alternate: 3.5%;      // parent is only 40%
+
 section {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     position: relative;
-    background-position: top right;
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding:3em 3em 3em 9em;
-    height: 100%;
+    padding: @base;
 }
 
 .alternate {
-    padding:15em 15em 15em 70em;
-}
 
-section.alternate p {
-    max-width: 40em;
-}
-
-section .content {
-    max-width: 105em;
-    margin:0 auto;
 }
 
 .time {
@@ -196,12 +160,21 @@ a.symbol:before {
     font-size: 130%;
 }
 
+.contentback {
+    color: #000;
+
+    /* This notation allows solid elements inside non solid elements */
+    background-color: rgba(255,255,255,0.8);
+
+    .roundbordered;
+}
+
 #introduction {
     background-image:url("@{images}/roca.jpg");
     background-color: @light-purple;
        
     header {
-        font-size: 5em;
+        font-size: 4em;
         font-family: 'Julius Sans One', sans-serif;
         color: @blue1;
         text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
@@ -213,18 +186,8 @@ a.symbol:before {
         background-position: center left;
     }
     
-    .contentback {
-        color: #000;
-        
-        /* This notation allows solid elements inside non solid elements */
-        background-color: rgba(255,255,255,0.8);
-        
-        max-width: 60em;
-        margin-top: 3em;
-        padding: 3em;
-        padding-bottom: 1em;
-
-        .roundbordered;
+    .contentback-left {
+        margin-top: @base / 2;
     }
 
     .important {
@@ -233,26 +196,16 @@ a.symbol:before {
 }
 
 .actions {
-    margin-bottom: 0.6em;
+    margin-bottom: @base / 4;
 }
     
 #sosti {
     background-position: top left;
     background-image:url("@{images}/frappe.jpg");
     background-color: #BBE5F9;
-    padding-top: 5em;
-    padding-right: 5em;
-    padding-bottom:10em;
-    color:#000;
-
-    .contentback {
-        color: #000;
-        background-color: #fff;
-        opacity: 0.8;
-        padding: 2.5em;
+    
+    .contentback-right {
         font-weight: lighter;
-
-        .roundbordered;
     } 
 
     .time, .important {
@@ -268,15 +221,8 @@ a.symbol:before {
         color: #009449;    
     }
 
-    .contentback {
-        color: #000;
-        background-color: #fff;
-        background-color: rgba(255,255,255,0.6);
-        padding: 2.5em;
+    .contentback-keft {
         font-weight: lighter;
-        max-width: 60em;
-
-        .roundbordered;
     }
 }
 
@@ -285,17 +231,11 @@ a.symbol:before {
 #pfc {
     background-image: url("@{images}/murallaciudad.jpg");
     background-color: @brown-wall;
-    padding-left: 75em;
-    padding-right: 10em;
 
-    .contentback {
-        color: #000;
-        background-color: #fff;
-        opacity: 0.9;
-        padding: 2.5em;
+    .alternate;
+    
+    .contentback-right {
         font-weight: lighter;
-
-        .roundbordered;
     }
 
     .time, .important {
@@ -307,17 +247,9 @@ a.symbol:before {
 #java-desktop {
     background-image: url("@{images}/sol.jpg");
     background-color: #525e74;
-    padding-top: 9em;
     
-    .contentback {
-        color: #000;
-        background-color: #fff;
-        background-color: rgba(255,255,255,0.75);
-        padding: 2.5em;
+    .contentback-left {
         font-weight: lighter;
-        max-width: 60em;
-
-        .roundbordered;
     }
 
     .time, .important {
@@ -328,19 +260,11 @@ a.symbol:before {
 #ecdo {
     background-image: url("@{images}/agua.jpg");
     background-color: #599fd2;
-    padding-top: 9em;
 
     .alternate;
     
     .contentback {
-        color: #000;
-        background-color: #fff;
-        background-color: rgba(255,255,255,0.75);
-        padding: 2.5em;
         font-weight: lighter;
-        max-width: 80em;
-
-        .roundbordered;
     }
 
     .time, .important {
@@ -352,19 +276,9 @@ a.symbol:before {
     background-image: url("@{images}/jonasurbano2.jpg");
     background-color: #d7a46d;
     background-position: center right;
-    padding-top: 9em;
-    padding-left: 2em;
     
     .contentback {
-        color: #000;
-        background-color: #fff;
-        opacity: 0.9;
-        padding: 2.5em;
-        padding-bottom: 1em;
         font-weight: lighter;
-        max-width: 50em;
-
-        .roundbordered;
     }
 
     .time, .important {
@@ -387,7 +301,6 @@ a.cv {
     padding: 0 0.6em;
     background-color: @blue1;
     color: #fff;
-    margin-right: 8em;
     .roundbordered;
 
     &:hover {
@@ -398,7 +311,7 @@ a.cv {
 }
 
 .screenshots {
-    width: 100%;    
+    width: 100%;
 }
 
 #img-ducktionary {
@@ -413,37 +326,48 @@ a.cv {
     .screenshots;
 }
 
-@media all and (max-width: 85em) {
-    body { font-size:9px; }
+@media all and (orientation: landscape) {
+    section {
+        height: 100%;
+        background-size: 100%;
+    }
+    
+    .contentback-left {
+        .contentback;
+     
+        max-width: @content;
+        padding: @content-padding;
+    }
+
+    .contentback-right {
+        .contentback;
+
+        padding: @content-padding-alternate;
+    }
+    
+    .alternate {
+        padding-left: @half + @base;
+    }
 }
 
-@media all and (max-width: 80em) {
-    section.alternate { padding:10em 15em; }
-}
+@media all and (orientation: portrait) {
+    section {
+        background-size: cover;
+    }
+    
+    .contentback-left {
+        .contentback;
+     
+        padding: @content-padding;
+    }
 
-@media all and (max-width: 75em) {
-    body { font-size:8px; }
-    section.init { height: auto; }
-}
+    .contentback-right {
+        .contentback;
 
-@media all and (max-width: 65em) {
-    body { font-size:7px; }
-}
-
-@media all and (max-width: 55em) {
-    li a span { display: none; }
-    section.more { background-image:none; }
-}
-
-@media all and (max-width: 50em) {
-    section, section.alternate, section.top, section.last { padding:6em; }
-    section.close { padding-top:0; }
-    i { display: none !important; }
-}
-
-@media all and (max-width: 40em) {
-    section.one { background-image:none; }
-    h1 { font-size:7em; }
-    input[type=email] { width:20em; }
-    br { display: none; }
+        padding: @content-padding;
+    }
+    
+    .alternate {
+        padding-left: @base;
+    }
 }
