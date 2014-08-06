@@ -4,12 +4,10 @@
         <title>Jonás Urbano, currículum vítae</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no, minimum-scale = 1.0, maximum-scale = 1.0">
-        <meta name="apple-mobile-web-app-capable" content="no">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
         <link href='css/normalize.css' rel='stylesheet' type='text/css'>
         <link href='css/style.css' rel='stylesheet' type='text/css'>
-        <link type="application/atom+xml" rel="alternate" href="/feed.atom" title="Atom feed" />
         <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
 
         <!--[if lt IE 9]>
@@ -22,7 +20,7 @@
             <header>
                 Jonás Urbano
             </header>
-            <div class="contentback-left">
+            <div class="contentback contentback-left">
                 <p>
                     Ingeniero en informática, de 24 años. Me he titulado este año en la universidad de Almería.
                     <span class="important">Me gustaría trabajar en un buen equipo de desarrollo de software.</span>
@@ -48,7 +46,7 @@
         </section>
 
         <section id="sosti" class="alternate">
-            <div class="contentback-right">
+            <div class="contentback contentback-right">
                 <p>
                     <span class="time">En los últimos 6 meses</span> he trabajado con un compañero en el
                     encargo de una aplicación móvil para Android conectada a un
@@ -67,7 +65,7 @@
         </section>
 
         <section id="ducktionary">
-            <div class ="contentback-left">
+            <div class ="contentback contentback-left">
                 <p>
                     <span class="time">A principios de 2014</span> 
                     comenzamos a desarrollar Ducktionary,
@@ -79,12 +77,12 @@
                     de datos con MongoDB se comunica con los dispositivos 
                     a través de Google Cloud Messaging.
                 </p>
-                <img id="img-ducktionary" src="images/ducktionary.jpg" />
+                <img id="img-ducktionary" class="screenshots" src="images/ducktionary.jpg" />
             </div>
         </section>
 
         <section id="pfc" class="alternate">
-            <div class="contentback-right">
+            <div class="contentback contentback-right">
                 <p>
                     <span class="time">En junio de 2013 </span>
                     comencé mi proyecto final de carrera
@@ -100,7 +98,7 @@
         </section>
 
         <section id="java-desktop">
-            <div class="contentback-left">
+            <div class="contentback contentback-left">
                 <p>
                     <span class="time">En 2012</span> desarrollamos una aplicación 
                     <span class="important">Java para escritorio</span>
@@ -108,12 +106,12 @@
                     subir vídeos a la plataforma y comentarlos.
                     En la aplicación integramos la librería de reproducción VLC.
                 </p>
-                <img id="img-java-desktop" src="images/mytube.jpg" />
+                <img id="img-java-desktop" class="screenshots" src="images/mytube.jpg" />
             </div>
         </section>
 
         <section id="ecdo" class="alternate">
-            <div class="contentback-right">
+            <div class="contentback contentback-right">
                 <p>
                     <span class="time">El mismo verano de 2012</span> 
                     desarrollé un juego para la plataforma
@@ -124,12 +122,12 @@
                     Para la aplicación usé <span class="important">PHP, el framework de persistencia
                         Doctrine, MySql, jQuery y Javascript</span>.
                 </p>
-                <img id="img-ecdo" src="images/ecdo.jpg" />
+                <img id="img-ecdo" class="screenshots" src="images/ecdo.jpg" />
             </div>
         </section>
 
         <section id="ending">
-            <div class="contentback-left">
+            <div class="contentback contentback-left">
                 <p>
                     Escribo un <a href="http://jonasurbano.wordpress.com/" target="_blank">
                         blog sobre desarrollo de software y tecnología.</a>
@@ -138,9 +136,9 @@
                     Algunos artículos que he escrito:
                 </p>
                     <ul>
-                        <li><a href="http://jonasurbano.wordpress.com/2014/04/16/el-destino-me-empujo-a-escribir-tests-de-aceptacionn-para-codigo-javascript/">El destino me empujó a escribir tests de aceptación para código Javascript</a></li>
-                        <li><a href="http://jonasurbano.wordpress.com/2014/02/20/sacar-a-spotify-del-hoyo/">Sacar a Spotify del hoyo</a></li>
-                        <li><a href="http://jonasurbano.wordpress.com/2013/12/14/comprar-bitcoins-en-espana/">Comprar Bitcoins en España</a></li>
+                        <li><a href="http://jonasurbano.wordpress.com/2014/04/16/el-destino-me-empujo-a-escribir-tests-de-aceptacionn-para-codigo-javascript/" target="_blank">El destino me empujó a escribir tests de aceptación para código Javascript</a></li>
+                        <li><a href="http://jonasurbano.wordpress.com/2014/02/20/sacar-a-spotify-del-hoyo/" target="_blank">Sacar a Spotify del hoyo</a></li>
+                        <li><a href="http://jonasurbano.wordpress.com/2013/12/14/comprar-bitcoins-en-espana/" target="_blank">Comprar Bitcoins en España</a></li>
                     </ul>
                 <p class="actions">
                     <a href="http://es.linkedin.com/pub/jon%C3%A1s-urbano-romero/3b/ab8/5a5/" target="_blank">
@@ -154,5 +152,74 @@
                 </p>
             </div>
         </section>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+        <script type="text/javascript">
+            var lastScrollFireTime = new Date().getTime();
+            var minScrollTime = 900;
+            var lastScrollTop = 0;
+            var $section;
+
+            $(document).ready(function() {
+                $section = $('section').first();
+
+                $(document).scroll(function(event) {
+                    event.preventDefault();
+                    
+                    var st = $(this).scrollTop();
+                    
+                    var now = new Date().getTime();
+                    if (now - lastScrollFireTime < minScrollTime) {
+                        lastScrollTop = st;
+                        return;
+                    }
+                    
+                    lastScrollFireTime = now;
+
+                    if (st > lastScrollTop) nextSection();
+                    else previousSection();
+                    
+                    lastScrollTop = st;
+                });
+                
+                $(document).keydown(function(e) {
+                    e.preventDefault();
+                    
+                    var now = new Date().getTime();
+                    if (now - lastScrollFireTime < minScrollTime) {
+                        return;
+                    }
+                    lastScrollFireTime = now;
+                    
+                    switch(e.which) {
+                        case 38: previousSection(); break;
+                        case 40: nextSection(); break;
+                        default: return;
+                    }
+                });
+            });
+            
+            function nextSection() {
+                var $nextSection = $section.next();
+                if ($nextSection.size() === 0) return;
+                scrollToSection($nextSection);        
+                $section = $nextSection;
+            }
+            
+            function scrollToSection($section) {
+                $('body').animate({
+                    scrollTop: $section.position().top
+                }, 'swing');
+            }
+            
+            function previousSection() {
+                var $nextSection = $section.prev();
+                if ($nextSection.size() === 0) return;
+                scrollToSection($nextSection);
+                $section = $nextSection;
+            }
+
+        </script>
     </body>
 </html>

@@ -99,10 +99,6 @@ section {
     padding: @base;
 }
 
-.alternate {
-
-}
-
 .time {
     font-size: 1.3em;
     font-weight: bold;
@@ -231,8 +227,6 @@ a.symbol:before {
 #pfc {
     background-image: url("@{images}/murallaciudad.jpg");
     background-color: @brown-wall;
-
-    .alternate;
     
     .contentback-right {
         font-weight: lighter;
@@ -261,8 +255,6 @@ a.symbol:before {
     background-image: url("@{images}/agua.jpg");
     background-color: #599fd2;
 
-    .alternate;
-    
     .contentback {
         font-weight: lighter;
     }
@@ -298,7 +290,6 @@ a.cv {
     display: inline-block;
     border: solid 1px @blue2;
     margin-top: 1.2em;
-    padding: 0 0.6em;
     background-color: @blue1;
     color: #fff;
     .roundbordered;
@@ -314,18 +305,6 @@ a.cv {
     width: 100%;
 }
 
-#img-ducktionary {
-    .screenshots;
-}
-
-#img-ecdo {
-    .screenshots;
-}
-
-#img-java-desktop {
-    .screenshots;
-}
-
 @media all and (orientation: landscape) {
     section {
         height: 100%;
@@ -333,20 +312,20 @@ a.cv {
     }
     
     .contentback-left {
-        .contentback;
-     
         max-width: @content;
         padding: @content-padding;
     }
 
     .contentback-right {
-        .contentback;
-
         padding: @content-padding-alternate;
     }
     
     .alternate {
         padding-left: @half + @base;
+    }
+    
+    a.cv {
+        padding: 0 0.6em;
     }
 }
 
@@ -356,18 +335,22 @@ a.cv {
     }
     
     .contentback-left {
-        .contentback;
-     
         padding: @content-padding;
     }
 
     .contentback-right {
-        .contentback;
-
         padding: @content-padding;
     }
     
     .alternate {
         padding-left: @base;
+    }
+    
+    #introduction header {
+        font-size: 3em;
+    }
+    
+    a.cv {
+        padding: 0 2.5em;
     }
 }
