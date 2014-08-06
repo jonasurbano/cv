@@ -3,7 +3,7 @@
     <head>
         <title>Jonás Urbano, currículum vítae</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no, minimum-scale = 1.0, maximum-scale = 1.0">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
         <link href='css/normalize.css' rel='stylesheet' type='text/css'>
@@ -77,7 +77,7 @@
                     de datos con MongoDB se comunica con los dispositivos 
                     a través de Google Cloud Messaging.
                 </p>
-                <img id="img-ducktionary" class="screenshots" src="images/ducktionary.jpg" />
+                <img id="img-ducktionary" src="images/ducktionary.jpg" />
             </div>
         </section>
 
@@ -215,6 +215,7 @@
             }
             
             function isOrientationLandscape() {
+                if (window.innerWidth <= 740) return false;
                 return window.innerHeight <= window.innerWidth;
             }
         </script>
