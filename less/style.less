@@ -57,13 +57,20 @@ ul li {
     font-size:1.6em;
     padding:.5em 1em;
     margin:0 .5em 1em 0;
-}
+    
+    a, ul li a:visited {
+        display: inline;
+    }
+    
+    &:hover {
+        background-color: @blue1;
+        border-color: #fff;
 
-ul li a, ul li a:visited {
-    display: inline;
+        a {
+            color: #fff;
+        }
+    }
 }
-
-/* --------------------------------------- */
 
 a, a:link, a:active, a:visited {
     color: @blue1;
@@ -87,14 +94,15 @@ a:hover {
 @base: 5%;
 @content: @base * 12;
 @half: @base * 10;
-@content-padding: 2%;                // @base / @content
-@content-padding-alternate: 3.5%;      // parent is only 40%
+@content-padding: 2%;                   // @base / @content
+@content-padding-alternate: 3.5%;       // parent is only 40%
 
 section {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     position: relative;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: @base;
 }
@@ -308,7 +316,6 @@ a.cv {
 @media all and (orientation: landscape) {
     section {
         height: 100%;
-        background-size: 100%;
     }
     
     .contentback-left {
@@ -330,10 +337,6 @@ a.cv {
 }
 
 @media all and (orientation: portrait) {
-    section {
-        background-size: cover;
-    }
-    
     .contentback-left {
         padding: @content-padding;
     }
@@ -351,6 +354,6 @@ a.cv {
     }
     
     a.cv {
-        padding: 0 2.5em;
+        padding: 0 2em;
     }
 }
