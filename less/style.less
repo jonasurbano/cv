@@ -121,7 +121,7 @@ section {
 @brown1: #954a00;
 @light-orange: #ffd2a5;
 
-@icons-path: "../icons/MonoSocialIconsFont-1.10";
+@icons-path: "../fonts/MonoSocialIconsFont-1.10";
 
 @font-face {
     font-family: 'Mono Social Icons Font';
@@ -165,12 +165,24 @@ a.symbol:before {
     .roundbordered;
 }
 
+.contentback-left {
+    padding: @content-padding;
+}
+
+.contentback-right {
+    padding: @content-padding;
+}
+
+.alternate {
+    padding-left: @base;
+}
+
 #introduction {
     background-image:url("@{images}/roca.jpg");
     background-color: @light-purple;
-       
+    
     header {
-        font-size: 4em;
+        font-size: 3em;
         font-family: 'Julius Sans One', sans-serif;
         color: @blue1;
         text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
@@ -292,6 +304,7 @@ a.cv {
     margin-top: 1.2em;
     background-color: @blue1;
     color: #fff;
+    padding: 0 1em;
     .roundbordered;
 
     &:hover {
@@ -310,7 +323,14 @@ a.cv {
     max-width: 100%;
 }
 
-@media all and (orientation: landscape) and (min-width: 740px) {
+@media (orientation: landscape)
+    and (min-width: 930px)
+    and (-webkit-max-device-pixel-ratio: 1.29)
+    and (max-resolution: 1.29dppx),
+    (orientation: landscape)
+    and (min-width: 930px)
+    and (max-aspect-ratio: 15/10) {
+    
     section {
         height: 100%;
     }
@@ -331,28 +351,8 @@ a.cv {
     a.cv {
         padding: 0 0.6em;
     }
-}
-
-@media all and (orientation: portrait), 
-    (orientation: landscape) and (max-width: 740px) {
-    
-    .contentback-left {
-        padding: @content-padding;
-    }
-
-    .contentback-right {
-        padding: @content-padding;
-    }
-    
-    .alternate {
-        padding-left: @base;
-    }
     
     #introduction header {
-        font-size: 3em;
-    }
-    
-    a.cv {
-        padding: 0 1.6em;
+        font-size: 6em;
     }
 }
