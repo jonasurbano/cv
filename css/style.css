@@ -268,7 +268,14 @@ a.cv:hover {
   width: auto;
   max-width: 100%;
 }
-@media (orientation: landscape) and (min-width: 930px) and (-webkit-max-device-pixel-ratio: 1.29) and (max-resolution: 1.29dppx), (orientation: landscape) and (min-width: 930px) and (max-aspect-ratio: 15/10) {
+/* max-resolution: 126dpi is required for IE.
+    It sould be 124.7dpi similarly to
+    http://www.brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries/
+
+    First and second media queries are supposed
+    to behave equally.
+*/
+@media (orientation: landscape) and (min-width: 930px) and (-webkit-max-device-pixel-ratio: 1.29), (orientation: landscape) and (min-width: 930px) and (max-resolution: 126dpi), (orientation: landscape) and (min-width: 930px) and (max-aspect-ratio: 15/10) {
   section {
     height: 100%;
   }
@@ -289,3 +296,4 @@ a.cv:hover {
     font-size: 6em;
   }
 }
+/*# sourceMappingURL=style.css.map */
