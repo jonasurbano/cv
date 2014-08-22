@@ -104,13 +104,19 @@ section {
     font-weight: bold;
 }
 
-.roundbordered {
-    -webkit-border-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    -moz-border-radius: 6px;
-    -moz-border-radius-bottomright: 6px;
-    border-radius: 6px;
-    border-bottom-right-radius: 6px;    
+.roundbordered(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.skill {
+    border-style: solid;
+    border-width: 0.1em;
+    background-color: #fff;
+    padding: 0.2em;
+    font-weight: bold;
+    .roundbordered(0.2em);
 }
 
 @images: "../images";
@@ -162,7 +168,7 @@ a.symbol:before {
     /* This notation allows solid elements inside non solid elements */
     background-color: rgba(255,255,255,0.8);
 
-    .roundbordered;
+    .roundbordered(0.5em);
 }
 
 .contentback-left {
@@ -216,7 +222,7 @@ a.symbol:before {
         font-weight: lighter;
     } 
 
-    .time, .important {
+    .time, .important, .skill {
         color: #5c7d44;
     }
 }
@@ -225,7 +231,7 @@ a.symbol:before {
     background-image:url("@{images}/duck.jpg");
     background-color: #39a888;
 
-    .time, .important {
+    .time, .important, .skill {
         color: #009449;    
     }
 
@@ -244,7 +250,7 @@ a.symbol:before {
         font-weight: lighter;
     }
 
-    .time, .important {
+    .time, .important, .skill {
         color: @brown-wall;
     }
 }
@@ -258,7 +264,7 @@ a.symbol:before {
         font-weight: lighter;
     }
 
-    .time, .important {
+    .time, .important, .skill {
         color: #f69862;
     }
 }
@@ -271,9 +277,11 @@ a.symbol:before {
         font-weight: lighter;
     }
 
-    .time, .important {
+    .time, .important, .skill {
         color: #599fd2;
     }
+    
+
 }
 
 #ending {
@@ -305,7 +313,7 @@ a.cv {
     background-color: @blue1;
     color: #fff;
     padding: 0 1em;
-    .roundbordered;
+    .roundbordered(0.5em);
 
     &:hover {
         border: solid 1px @blue1;

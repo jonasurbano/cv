@@ -3,6 +3,10 @@
     <head>
         <title>Jonás Urbano, currículum vítae</title>
         <meta charset="utf-8">
+        <meta name="description" content="Soy ingeniero en informática buscando 
+            trabajo como desarrollador de software. Lee una breve descripción 
+            de los proyectos en que he trabajado y contactar conmigo" />
+
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -16,13 +20,13 @@
     </head>
     <body>
 
-        <section id="introduction" class="init">
+        <section id="introduction" itemscope itemtype="http://schema.org/Person">
             <header>
-                Jonás Urbano
+                <span itemprop="name">Jonás Urbano</span>
             </header>
             <div class="contentback contentback-left">
                 <p>
-                    Ingeniero en informática, de 24 años. Me he titulado este año en la universidad de Almería.
+                    <span itemprop="title">Ingeniero en informática</span>, de 24 años. Me he titulado este año en la universidad de Almería.
                     <span class="important">Me gustaría trabajar en un buen equipo de desarrollo de software.</span>
                 </p>
                 <p class="actions">
@@ -38,7 +42,7 @@
                         <span class='symbol'>&#xe286;</span></a>
                     <a href="https://github.com/jonasurbano" target="_blank">
                         <span class='symbol'>&#xe237;</span></a>
-                    <br>Escríbeme a <a href="mailto:jonasur@gmail.com" target="_blank">jonasur@gmail.com</a>,
+                    <br>Escríbeme a <a href="mailto:jonasur@gmail.com" target="_blank"><span itemprop="email">jonasur@gmail.com</span></a>,
                     <br>lee mi <a href="http://jonasurbano.wordpress.com/" target="_blank">blog: jonasurbano.wordpress.com</a>.
                     <br><a class="cv" href="res/jonasurbanoromero-cv.pdf">Descarga mi CV para imprimir</a>
                 </p>
@@ -49,15 +53,15 @@
             <div class="contentback contentback-right">
                 <p>
                     <span class="time">En los últimos 6 meses</span> he trabajado con un compañero en el
-                    encargo de una aplicación móvil para Android conectada a un
-                    servidor Java con Spring.
+                    encargo de una aplicación móvil para <span class="skill">Android</span> conectada a un
+                    servidor Java con <span class="skill">Spring</span>.
                     <span class="important">La seguridad era un requisito primordial 
                     </span>por lo que aplicamos
                     cifrado en la conexión con SSL, en el dispositivo móvil y
                     en la base de datos.
                     Para gestionar el proyecto usamos  <span class="important">
-                        JIRA Agile conectado con
-                        Jenkins que descargaba y ejecutaba la suite de tests 
+                        <span class="skill">JIRA Agile</span> conectado con
+                        <span class="skill">Jenkins</span> que descargaba y ejecutaba la suite de tests 
                     </span>a medida
                     que ampliábamos la base de código.
                 </p>
@@ -69,13 +73,13 @@
                 <p>
                     <span class="time">A principios de 2014</span> 
                     comenzamos a desarrollar Ducktionary,
-                    un <span class="important">juego para Android utilizando 
+                    un <span class="important">juego para <span class="skill">Android</span> utilizando 
                         las librerías más punteras</span>
                     para desarrollar una aplicación modular, desacoplada
                     y fácilmente testeable.
-                    El servidor desarrollado con Spring y respaldado con una base
-                    de datos con MongoDB se comunica con los dispositivos 
-                    a través de Google Cloud Messaging.
+                    El servidor desarrollado con <span class="skill">Spring</span> y respaldado con una base
+                    de datos con <span class="skill">MongoDB</span> se comunica con los dispositivos 
+                    a través de <span class="skill">Google Cloud Messaging</span>.
                 </p>
                 <img id="img-ducktionary" src="images/ducktionary.jpg" />
             </div>
@@ -86,9 +90,11 @@
                 <p>
                     <span class="time">En junio de 2013 </span>
                     comencé mi proyecto final de carrera
-                    en el que investigué sobre la importancia de la información
-                    geolocalizada y las distintas pasarelas de pagos para integrar
-                    en aplicaciones Android.
+                    en el que investigué sobre la importancia de la 
+                    <span class="skill">información
+                    geolocalizada</span> y las distintas 
+                    <span class="skill">pasarelas de pagos</span> para integrar
+                    en aplicaciones <span class="skill">Android</span>.
                     <span class="important">Desarrollé una aplicación de compra 
                         y venta de servicios
                         geolocalizados a través de diferentes pasarelas de pago
@@ -102,7 +108,7 @@
                 <p>
                     <span class="time">En 2012</span> desarrollamos una aplicación 
                     <span class="important">Java para escritorio</span>
-                    llamada MyTube utilizando  <span class="important">Swing</span> desde la que se puede 
+                    llamada MyTube utilizando  <span class="skill">Swing</span> desde la que se puede 
                     subir vídeos a la plataforma y comentarlos.
                     En la aplicación integramos la librería de reproducción VLC.
                 </p>
@@ -119,8 +125,9 @@
                     llamado El comentario de oro.
                     En el juego se comentaban los partidos de las jornadas de la LFP
                     y otros usuarios podían discutir y valorar los comentarios.
-                    Para la aplicación usé <span class="important">PHP, el framework de persistencia
-                        Doctrine, MySql, jQuery y Javascript</span>.
+                    Para la aplicación usé <span class="skill">PHP</span>, el framework de persistencia
+                    <span class="skill">Doctrine</span>, <span class="skill">MySql</span>, 
+                    <span class="skill">jQuery</span> y <span class="skill">Javascript</span>.
                 </p>
                 <img id="img-ecdo" class="screenshots" src="images/ecdo.jpg" />
             </div>

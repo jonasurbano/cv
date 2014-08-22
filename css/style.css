@@ -88,13 +88,15 @@ section {
   font-size: 1.3em;
   font-weight: bold;
 }
-.roundbordered {
-  -webkit-border-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -moz-border-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  border-radius: 6px;
-  border-bottom-right-radius: 6px;
+.skill {
+  border-style: solid;
+  border-width: 0.1em;
+  background-color: #fff;
+  padding: 0.2em;
+  font-weight: bold;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
 }
 @font-face {
   font-family: 'Mono Social Icons Font';
@@ -128,12 +130,9 @@ a.symbol:before {
   color: #000;
   /* This notation allows solid elements inside non solid elements */
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-border-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -moz-border-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  border-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
 }
 .contentback-left {
   padding: 2%;
@@ -177,7 +176,8 @@ a.symbol:before {
   font-weight: lighter;
 }
 #sosti .time,
-#sosti .important {
+#sosti .important,
+#sosti .skill {
   color: #5c7d44;
 }
 #ducktionary {
@@ -185,7 +185,8 @@ a.symbol:before {
   background-color: #39a888;
 }
 #ducktionary .time,
-#ducktionary .important {
+#ducktionary .important,
+#ducktionary .skill {
   color: #009449;
 }
 #ducktionary .contentback-keft {
@@ -199,7 +200,8 @@ a.symbol:before {
   font-weight: lighter;
 }
 #pfc .time,
-#pfc .important {
+#pfc .important,
+#pfc .skill {
   color: #d0a583;
 }
 #java-desktop {
@@ -210,7 +212,8 @@ a.symbol:before {
   font-weight: lighter;
 }
 #java-desktop .time,
-#java-desktop .important {
+#java-desktop .important,
+#java-desktop .skill {
   color: #f69862;
 }
 #ecdo {
@@ -221,7 +224,8 @@ a.symbol:before {
   font-weight: lighter;
 }
 #ecdo .time,
-#ecdo .important {
+#ecdo .important,
+#ecdo .skill {
   color: #599fd2;
 }
 #ending {
@@ -249,12 +253,9 @@ a.cv {
   background-color: #0088ff;
   color: #fff;
   padding: 0 1em;
-  -webkit-border-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -moz-border-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  border-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
 }
 a.cv:hover {
   border: solid 1px #0088ff;
