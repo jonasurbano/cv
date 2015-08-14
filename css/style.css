@@ -167,6 +167,43 @@ a.symbol:before {
 .actions {
   margin-bottom: 1.25%;
 }
+#reporting {
+  background-image: url("../images/environmental.jpg");
+  background-color: #0088ff;
+}
+#reporting .contentback-left {
+  margin-top: 2.5%;
+}
+#reporting .skill {
+  color: #0088ff;
+}
+#reporting .important,
+#reporting .time {
+  color: #954a00;
+}
+#poiwrapper {
+  background-image: url("../images/jardin.jpg");
+  background-color: #395a00;
+}
+#poiwrapper .contentback-left {
+  margin-top: 2.5%;
+}
+#poiwrapper .time {
+  color: #954a00;
+}
+#poiwrapper .important,
+#poiwrapper .skill {
+  color: #395a00;
+}
+#poiwrapper a .symbol,
+#poiwrapper a:link .symbol,
+#poiwrapper a:active .symbol,
+#poiwrapper a:visited .symbol {
+  color: #395a00;
+}
+#poiwrapper a:hover .symbol {
+  color: #0088ff;
+}
 #sosti {
   background-position: top left;
   background-image: url("../images/frappe.jpg");
@@ -182,7 +219,7 @@ a.symbol:before {
 }
 #ducktionary {
   background-image: url("../images/duck.jpg");
-  background-color: #39a888;
+  background-color: #395a00;
 }
 #ducktionary .time,
 #ducktionary .important,
@@ -236,8 +273,7 @@ a.symbol:before {
 #ending .contentback {
   font-weight: lighter;
 }
-#ending .time,
-#ending .important {
+#ending .time {
   color: #f69862;
 }
 #ending .important {

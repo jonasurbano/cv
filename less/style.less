@@ -126,6 +126,7 @@ section {
 @blue2: #03f;
 @brown1: #954a00;
 @light-orange: #ffd2a5;
+@green: #395a00;
 
 @icons-path: "../fonts/MonoSocialIconsFont-1.10";
 
@@ -212,6 +213,52 @@ a.symbol:before {
 .actions {
     margin-bottom: @base / 4;
 }
+
+#reporting {
+    background-image:url("@{images}/environmental.jpg");
+    background-color: @blue1;
+    
+    .contentback-left {
+        margin-top: @base / 2;
+    }
+
+    .skill {
+        color: @blue1;
+    }
+    
+    .important, .time {
+        color: @brown1;
+    }
+}
+
+#poiwrapper {
+    background-image:url("@{images}/jardin.jpg");
+    background-color: @green;
+    
+    .contentback-left {
+        margin-top: @base / 2;
+    }
+    
+    .time {
+        color: @brown1;
+    }
+
+    .important, .skill {
+        color: @green;
+    }
+    
+    a, a:link, a:active, a:visited {
+        .symbol {
+            color: @green;
+        }
+    }
+
+    a:hover {
+        .symbol {
+            color: @blue1;            
+        }
+    }
+}
     
 #sosti {
     background-position: top left;
@@ -229,7 +276,7 @@ a.symbol:before {
 
 #ducktionary {
     background-image:url("@{images}/duck.jpg");
-    background-color: #39a888;
+    background-color: @green;
 
     .time, .important, .skill {
         color: #009449;    
@@ -293,7 +340,7 @@ a.symbol:before {
         font-weight: lighter;
     }
 
-    .time, .important {
+    .time {
         color: #f69862;
     }       
 
